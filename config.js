@@ -6,8 +6,12 @@ module.exports = {
   mongoUrl: process.env.mongoUrl,
   clientId: process.env.clientId,
   logChannel: process.env.logChannel,
+  logWebhook: process.env.logWebhook,
+  prefix: "!", // <<====== Tambahkan ini
+
   deploySlashOnReady: true,
   underDevelopment: false,
+
   developers: [
     {
       name: "Jason Midul",
@@ -34,5 +38,4 @@ module.exports = {
       id: "1280838788591124541",
     },
   ],
-  logWebhook: process.env.logWebhook,
 };
